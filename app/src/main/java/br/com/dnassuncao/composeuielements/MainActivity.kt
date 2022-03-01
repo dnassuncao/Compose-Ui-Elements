@@ -30,10 +30,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun TextUi(text: String) {
     Column {
-        BasicText(
-            text = text, modifier = Modifier
-                .padding(8.dp)
-        )
+        BasicText(text = text, modifier = Modifier.padding(8.dp))
+        Text(text = text, modifier = Modifier.padding(8.dp))
     }
 }
 
